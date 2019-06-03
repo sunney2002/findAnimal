@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style>
+		.item{
+			height: 180px;
+			width: 250px;
+			background-size: 100% 100%;
+		}
+	</style>
+
+</head>
+<body>
+ <div>
+ 	<h2>ОЧКИ</h2>
+ 	<h2 class="point">100</h2>
+ 	<div>
+ 		<div class="item i1" style="margin-left: 30px; margin-top: 50px; position: absolute; background-image: url(Antilop.jpg);"></div>
+ 		<div class="item i2" style="margin-left: 30px; margin-top: 350px; position: absolute; background-image: url(begemot.jpg);"></div>
+ 		<div class="item i3" style="margin-left: 900px; margin-top: 400px; position: absolute; background-image: url(elephant.jpg);"></div>
+ 		<div class="item i4" style="margin-left: 1200px; margin-top: 350px; position: absolute; background-image: url(giena.jpg);"></div>
+ 		<div class="item i5" style="margin-left: 600px; margin-top: 450px; position: absolute; background-image: url(jiraf.jpg);"></div>
+ 		<div class="item i6" style="margin-left: 1200px; margin-top: 50px; position: absolute; background-image: url(korova.jpg);"></div>
+ 		<div class="item i7" style="margin-left: 450px; margin-top: -70px; position: absolute; background-image: url(lion.jpg);"></div>
+ 		<div class="item i8" style="margin-left: 750px; margin-top: -70px; position: absolute; background-image: url(nosorog.jpg);"></div>
+ 		<div class="item i9" style="margin-left: 300px; margin-top: 400px; position: absolute; background-image: url(zebra.jpg);"></div>
+ 		<div class="text">
+ 			<h3 style="text-align: center;padding-top: 270px">Где спрятана антилопа?</h3>
+ 		</div>
+ 		<div class="text2">
+ 			<h3 style="text-align: center;padding-top: 270px">Поздавляю!</h3>
+ 		</div>
+ 	</div>
+
+ </div>	
+<script type="text/javascript">
+	let num = 100;
+	document.querySelector(".text").style.display = "none";
+	document.querySelector(".text2").style.display = "none";
+	let timer = function() {
+		document.querySelector(".i1").style.background = "#7595c6";
+		document.querySelector(".i2").style.background = "#7595c6";
+		document.querySelector(".i3").style.background = "#7595c6";
+		document.querySelector(".i4").style.background = "#7595c6";
+		document.querySelector(".i5").style.background = "#7595c6";
+		document.querySelector(".i6").style.background = "#7595c6";
+		document.querySelector(".i7").style.background = "#7595c6";
+		document.querySelector(".i8").style.background = "#7595c6";
+		document.querySelector(".i9").style.background = "#7595c6";
+		document.querySelector(".text").style.display = "block";
+		document.querySelector(".i1").onclick = function(){
+			alert("Правильно!");
+			document.querySelector(".i1").style.background = "url(Antilop.jpg)";
+			document.querySelector(".i1").style.backgroundSize = "100% 100%";
+			num = num + 100;
+			document.querySelector(".point").innerHTML = num;{
+				document.querySelector(".i2").style.background = "url(begemot.jpg)";
+				document.querySelector(".i2").style.backgroundSize = "100% 100%";
+				document.querySelector(".i3").style.background = "url(elephant.jpg)";
+				document.querySelector(".i3").style.backgroundSize = "100% 100%";
+				document.querySelector(".i4").style.background = "url(giena.jpg)";
+				document.querySelector(".i4").style.backgroundSize = "100% 100%";
+				document.querySelector(".i5").style.background = "url(jiraf.jpg)";
+				document.querySelector(".i5").style.backgroundSize = "100% 100%";
+				document.querySelector(".i6").style.background = "url(korova.jpg)";
+				document.querySelector(".i6").style.backgroundSize = "100% 100%";
+				document.querySelector(".i7").style.background = "url(lion.jpg)";
+				document.querySelector(".i7").style.backgroundSize = "100% 100%";
+				document.querySelector(".i8").style.background = "url(nosorog.jpg)";
+				document.querySelector(".i8").style.backgroundSize = "100% 100%";
+				document.querySelector(".i9").style.background = "url(zebra.jpg)";
+				document.querySelector(".i9").style.backgroundSize = "100% 100%";
+				document.querySelector(".text").style.display = "none";
+				document.querySelector(".text2").style.display = "block";
+			}
+        }
+		document.querySelector(".i2").onclick = function(){
+			alert("Неправильно!");
+			document.querySelector(".i2").style.background = "url(begemot.jpg)";
+			document.querySelector(".i2").style.backgroundSize = "100% 100%";
+			num = num - 10;
+			document.querySelector(".point").innerHTML = num;
+        }	
+        document.querySelector(".i3").onclick = function(){
+        	alert("Неправильно!");
+			document.querySelector(".i3").style.background = "url(elephant.jpg)";
+			document.querySelector(".i3").style.backgroundSize = "100% 100%";
+			num = num - 10;
+			document.querySelector(".point").innerHTML = num;
+        }
+        document.querySelector(".i4").onclick = function(){
+        	alert("Неправильно!");
+			document.querySelector(".i4").style.background = "url(giena.jpg)";
+			document.querySelector(".i4").style.backgroundSize = "100% 100%";
+			num = num - 10;
+			document.querySelector(".point").innerHTML = num;
+        }
+        document.querySelector(".i5").onclick = function(){
+        	alert("Неправильно!");
+			document.querySelector(".i5").style.background = "url(jiraf.jpg)";
+			document.querySelector(".i5").style.backgroundSize = "100% 100%";
+			num = num - 10;
+			document.querySelector(".point").innerHTML = num;
+        }
+        document.querySelector(".i6").onclick = function(){
+        	alert("Неправильно!");
+			document.querySelector(".i6").style.background = "url(korova.jpg)";
+			document.querySelector(".i6").style.backgroundSize = "100% 100%";
+			num = num - 10;
+			document.querySelector(".point").innerHTML = num;
+        }
+        document.querySelector(".i7").onclick = function(){
+        	alert("Неправильно!");
+			document.querySelector(".i7").style.background = "url(lion.jpg)";
+			document.querySelector(".i7").style.backgroundSize = "100% 100%";
+			num = num - 10;
+			document.querySelector(".point").innerHTML = num;
+        }
+        document.querySelector(".i8").onclick = function(){
+        	alert("Неправильно!");
+			document.querySelector(".i8").style.background = "url(nosorog.jpg)";
+			document.querySelector(".i8").style.backgroundSize = "100% 100%";
+			num = num - 10;
+			document.querySelector(".point").innerHTML = num;
+        }
+        document.querySelector(".i9").onclick = function(){
+        	alert("Неправильно!");
+			document.querySelector(".i9").style.background = "url(zebra.jpg)";
+			document.querySelector(".i9").style.backgroundSize = "100% 100%";
+			num = num - 10;
+			document.querySelector(".point").innerHTML = num;
+        }
+     }
+      setTimeout(timer, 1000);
+</script>
+</body>
+</html>
